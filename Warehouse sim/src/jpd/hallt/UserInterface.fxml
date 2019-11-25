@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="368.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="395.0" minWidth="10.0" prefWidth="332.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="300.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="507.0" minHeight="10.0" prefHeight="507.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox maxHeight="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="112.0" prefWidth="700.0">
+         <children>
+            <Button id="robot" mnemonicParsing="false" text="Robot">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant elevation="128.72" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button id="packing_station" mnemonicParsing="false" text="Packing Station" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant elevation="128.72" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="shelf" mnemonicParsing="false" text="Shelf">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant elevation="128.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="delete" mnemonicParsing="false" style="-fx-border-style: curve;" text="Delete">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant elevation="128.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <GridPane.margin>
+            <Insets top="10.0" />
+         </GridPane.margin>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <children>
+            <Button id="clear" mnemonicParsing="false" text="Clear">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="load" mnemonicParsing="false" text="Load">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="save" mnemonicParsing="false" text="Save">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <GridPane.margin>
+            <Insets top="10.0" />
+         </GridPane.margin>
+      </HBox>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="109.0" minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="328.0" minHeight="10.0" prefHeight="149.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="294.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="303.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="303.0" minHeight="10.0" prefHeight="157.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="303.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="303.0" minHeight="10.0" prefHeight="112.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="303.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField alignment="TOP_LEFT" text="Warehouse">
+               <GridPane.margin>
+                  <Insets left="5.0" right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <GridPane GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="161.0" minWidth="10.0" prefWidth="112.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="220.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text id="width" strokeType="OUTSIDE" strokeWidth="0.0" text="Width:" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text id="height" strokeType="OUTSIDE" strokeWidth="0.0" text="Height:">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Slider id="heightslider" majorTickUnit="2.0" max="15.0" min="3.0" showTickLabels="true" value="9.0" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </GridPane.margin>
+                  </Slider>
+                  <Slider id="widthslider" majorTickUnit="2.0" max="15.0" min="3.0" showTickLabels="true" value="9.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </GridPane.margin>
+                  </Slider>
+               </children>
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin>
+            </GridPane>
+            <TextField id="order" alignment="TOP_LEFT" text="Orders" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <GridPane prefHeight="25.0" prefWidth="332.0" GridPane.rowIndex="3">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+                  <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+               </rowConstraints>
+               <children>
+                  <TextArea id="textarea" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="156.0" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </GridPane.margin>
+                  </TextArea>
+                  <Button id="generate" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="Generate" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+            <ListView prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="10.0" right="20.0" top="10.0" />
+               </GridPane.margin>
+            </ListView>
+            <TextField id="robots" alignment="TOP_LEFT" text="Robots" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="5.0" right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <GridPane GridPane.rowIndex="6">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="161.0" minWidth="10.0" prefWidth="111.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="221.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text id="capacity" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity:">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text id="chargespeed" strokeType="OUTSIDE" strokeWidth="0.0" text="Charge Speed:" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Slider id="capacityslider" majorTickUnit="20.0" showTickLabels="true" value="50.0" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Slider>
+                  <Slider id="chargespeedslider" majorTickUnit="1.0" max="5.0" min="1.0" showTickLabels="true" value="1.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Slider>
+               </children>
+            </GridPane>
+            <Button id="start" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="Start" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="250.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+         <GridPane.margin>
+            <Insets top="20.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </GridPane>
+      <GridPane id="grid" fx:id="grid" gridLinesVisible="true" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <GridPane.margin>
+            <Insets bottom="125.0" left="50.0" right="50.0" top="120.0" />
+         </GridPane.margin>
+      </GridPane>
+   </children>
+</GridPane>
